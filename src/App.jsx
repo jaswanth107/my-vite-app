@@ -4,7 +4,10 @@ import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import { MovieProvider } from "./contexts/MovieContext";
 import NavBar from "./components/NavBar";
+import Login from "./pages/Login";
 
+
+<Route path="/login" element={<Login />} />
 function App() {
   return (
     <MovieProvider>
