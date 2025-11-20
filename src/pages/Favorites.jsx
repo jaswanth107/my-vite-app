@@ -1,11 +1,21 @@
 import "../css/Favorites.css";
-import { useMovieContext } from "../contexts/MovieContext";
+import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
+import { getFavorites } from "../services/api";
 
 function Favorites() {
-  const { favorites } = useMovieContext();
+  const [favorites, setFavorites] = useState([]);
 
-  if (favorites) {
+  useEffect(() => {
+    loadFavorites();
+  }, []);
+
+  const loadFavorites = async () => {
+    const data = await getFavorites();
+    setFavorites(data);
+  };
+
+  if (favorites.length > 0) {
     return (
       <div className="favorites">
         <h2>Your Favorites</h2>
