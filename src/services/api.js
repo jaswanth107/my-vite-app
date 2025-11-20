@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5173";
+const API_BASE = "http://localhost:5000";
 
 // ----- AUTH -----
 export async function signup(email, password) {
