@@ -1,1 +1,2 @@
-{"id":"f_001","userId":"u_001","movieId":"tt0111161","title":"The Shawshank Redemption","extra":{},"addedAt":"2025-11-20T10:30:00Z"}
+{"id":"fav1","userId":"u1","movie":{"id":101,"title":"Avatar"}}
+{"id":"fav2","userId":"u2","movie":{"id":205,"title":"Batman"}}
